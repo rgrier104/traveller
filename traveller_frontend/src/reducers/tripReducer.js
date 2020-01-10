@@ -1,6 +1,10 @@
 
 export default function tripReducer(state = { trips: [] }, action) {
-    
-    return state;
+    switch (action.type) {
+        case 'FETCH_TRIPS':
+            return { trips: action.payload }
+        default:
+            return state
+    }
 
 }
