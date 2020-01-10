@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Trips = (props) => {
+const Trips = ({trips}) => {
 
     return (
         <div>
-            Trips
+            <ul>
+                {trips.map(trip => <li key={trip.id}>{trip.name}</li>)}
+            </ul>
         </div>
     )
 }
