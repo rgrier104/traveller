@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { addTrip } from '../actions/addTrip';
 
 class TripInput extends Component {
 
@@ -15,12 +17,17 @@ class TripInput extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
+        this.props.addTrip(this.state)
+        this.setState({
+            name: '',
+            status: ''
+        })
     }
 
     render() {
         return (
             <div>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <label>Trip Name:</label>
                     <input onChange={this.handleOnChange} type="text" name="name" value={this.state.name} />
                     <label>Status:</label>
@@ -37,4 +44,4 @@ class TripInput extends Component {
     }
 }
 
-export default TripInput;
+export default connect(null, {addTrip})(TripInput);
