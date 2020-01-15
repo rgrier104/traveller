@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Trip = ({ trip }) => {
+const Trip = (props) => {
+
+    let trip = props.trips.filter(trip => trip.id === parseInt(props.match.params.id))[0]
 
     return (
         <div>
             <li>
-              {trip.name}
+              {trip ? trip.name : null}
             </li>
         </div>
     )
