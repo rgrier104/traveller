@@ -1,4 +1,5 @@
 import React from 'react';
+import RecommendationsContainer from '../containers/RecommendationsContainer';
 
 const Trip = (props) => {
 
@@ -6,9 +7,10 @@ const Trip = (props) => {
 
     return (
         <div>
-            <li>
-              {trip ? trip.name : null}
-            </li>
+            {trip ? trip.name : null}
+            <div>
+                <RecommendationsContainer trip={trip} />
+            </div>
         </div>
     )
 }
