@@ -10,6 +10,13 @@ class Api::V1::RecommendationsController < ApplicationController
         end
     end
 
+    def destroy
+        @recommendation = Recommendation.find(params[:id])
+        @trip = Trip.find(@recommendation.trip_id)
+        @recommendation.destroy
+        render json: @trip
+    end
+
     private
 
     def recommendation_params
