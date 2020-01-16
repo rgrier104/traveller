@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { addRecommendation } from '../actions/addRecommendation';
 
 class RecommendationInput extends Component {
 
@@ -16,7 +17,7 @@ class RecommendationInput extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        // this.props.addTrip(this.state)
+        this.props.addRecommendation(this.state, this.props.trip.id)
         this.setState({
             title: '',
             description: ''
@@ -31,11 +32,11 @@ class RecommendationInput extends Component {
                     <input onChange={this.handleOnChange} type="text" name="title" value={this.state.title} />
                     <label>Descritpion:</label>
                     <input onChange={this.handleOnChange} type="text" name="description" value={this.state.description} />
-                    <input type="submit" value="Create Trip" />
+                    <input type="submit" value="Add Recommendation" />
                 </form>
             </div>
         )
     }
 }
 
-export default connect(null)(RecommendationInput);
+export default connect(null, { addRecommendation })(RecommendationInput);
