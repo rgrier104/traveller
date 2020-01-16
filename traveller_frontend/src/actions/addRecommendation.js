@@ -9,10 +9,16 @@ export function addRecommendation(data, tripId) {
             body: JSON.stringify(data)
         })
             .then(resp => resp.json())
-            .then(trip => dispatch({
-                type: 'ADD_RECOMMENDATION',
-                payload: trip
-            }))
+            .then(trip => {
+                if (trip.error) {
+                    alert(trip.error)
+                } else {
+                    dispatch({
+                        type: 'ADD_RECOMMENDATION',
+                        payload: trip
+                    })
+                }
+            })
     }
 
 }
