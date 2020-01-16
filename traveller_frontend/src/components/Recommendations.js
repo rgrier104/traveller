@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Recommendation from './Recommendation';
 
 const Recommendations = (props) => {
 
@@ -7,9 +7,7 @@ const Recommendations = (props) => {
         <div>
             <ul>
             {props.recommendations && props.recommendations.map(recommendation => 
-                <li key={recommendation.id}>
-                    {recommendation.title}
-                </li>
+                <Recommendation key={recommendation.id} recommendation={recommendation} />
             )}
             </ul>
         </div>
