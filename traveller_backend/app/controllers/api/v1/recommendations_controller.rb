@@ -1,9 +1,10 @@
 class Api::V1::RecommendationsController < ApplicationController
 
     def create
-        @recommendation = Recommendation.new(recommendation_params)
+        @trip = Trip.find(params[:trip_id])
+        @recommendation = @trip.recommendations.new(recommendation_params)
         if @recommendation.save
-            render json: @recommendation
+            render json: @trip
         else
             render json: {error: 'Error creating recommendation'}
         end
