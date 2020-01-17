@@ -8,3 +8,15 @@
   padding-left: 25%;
   padding-right: 25%;
 }
+
+.rec-container {
+  padding: 25px;
+  margin-left: 25%;
+  margin-right:25%;
+}
+
+.rec-card {
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+}
