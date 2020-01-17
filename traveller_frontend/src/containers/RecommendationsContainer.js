@@ -6,7 +6,7 @@ class RecommendationsContainer extends Component {
 
     render() {
         return (
-            <div>
+            <div className="rec-container">
                 <RecommendationInput trip={this.props.trip} />
                 <Recommendations recommendations={this.props.trip && this.props.trip.recommendations} />
             </div>

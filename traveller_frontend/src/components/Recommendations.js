@@ -5,7 +5,7 @@ const Recommendations = (props) => {
 
     return (
         <div>
-            <div className="rec-container">
+            <div className="rec-list-container">
                 {props.recommendations && props.recommendations.map(recommendation =>
                     <Recommendation key={recommendation.id} recommendation={recommendation} />
                 )}

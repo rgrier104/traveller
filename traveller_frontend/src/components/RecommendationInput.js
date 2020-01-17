@@ -30,9 +30,9 @@ class RecommendationInput extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <label>Recommendation:</label>
                     <input onChange={this.handleOnChange} type="text" name="title" value={this.state.title} />
-                    <label>Descritpion:</label>
-                    <input onChange={this.handleOnChange} type="text" name="description" value={this.state.description} />
-                    <input type="submit" value="Add Recommendation" />
+                    <label>Notes:</label>
+                    <textarea onChange={this.handleOnChange} name="description" value={this.state.description} />
+                    <input className="submit" type="submit" value="Add Recommendation" />
                 </form>
             </div>
         )

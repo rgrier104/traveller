@@ -13,6 +13,13 @@
   display: grid;
   margin-left: 25%;
   margin-right:25%;
+
+}
+
+.rec-list-container {
+    display: grid;
+  /* margin-left: 25%;
+  margin-right:25%; */
   border-top: 1px solid black;
   border-left: 1px solid black;
 }
@@ -41,4 +48,20 @@
   justify-self: end;
   align-self: center;
   color: red;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: .5em;
+
+  margin: 25px;
+}
+
+label {
+  justify-self: end;
+}
+
+.submit {
+  grid-column: 2/3;
 }
