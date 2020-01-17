@@ -11,8 +11,17 @@ class Recommendation extends Component {
     render() {
         return (
             <div className="rec-card">
-                {this.props.recommendation.title}
-                <button onClick={this.handleClick}>Delete</button>
+                <div className="rec-content">
+                    <div className="rec-title">
+                        {this.props.recommendation.title}
+                    </div>
+                    <div className="rec-description">
+                        {this.props.recommendation.description}
+                    </div>
+                </div>
+                <div className='delete-btn'>
+                    <button className="delete-btn" onClick={this.handleClick}>X</button>
+                </div>
             </div>
         )
     }
