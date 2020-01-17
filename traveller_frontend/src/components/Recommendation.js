@@ -10,11 +10,9 @@ class Recommendation extends Component {
 
     render() {
         return (
-            <div>
-                <li key={this.props.recommendation.id}>
-                    {this.props.recommendation.title}
-                    <button onClick={this.handleClick}>Delete</button>
-                </li>
+            <div className="rec-card">
+                {this.props.recommendation.title}
+                <button onClick={this.handleClick}>Delete</button>
             </div>
         )
     }

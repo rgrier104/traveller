@@ -27,6 +27,7 @@ class TripInput extends Component {
     render() {
         return (
             <div>
+                <h1>Create New Trip</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>Trip Name:</label>
                     <input onChange={this.handleOnChange} type="text" name="name" value={this.state.name} />

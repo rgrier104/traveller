@@ -5,11 +5,11 @@ const Recommendations = (props) => {
 
     return (
         <div>
-            <ul>
-            {props.recommendations && props.recommendations.map(recommendation => 
-                <Recommendation key={recommendation.id} recommendation={recommendation} />
-            )}
-            </ul>
+            <div className="rec-container">
+                {props.recommendations && props.recommendations.map(recommendation =>
+                    <Recommendation key={recommendation.id} recommendation={recommendation} />
+                )}
+            </div>
         </div>
     )
 }

@@ -7,7 +7,7 @@ const Trip = (props) => {
 
     return (
         <div>
-            {trip ? trip.name : null}
+            <h1>{trip ? trip.name : null} Recommendations</h1>
             <div>
                 <RecommendationsContainer trip={trip} />
             </div>
