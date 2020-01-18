@@ -22,6 +22,7 @@ class TripInput extends Component {
             name: '',
             status: ''
         })
+        this.props.history.push('/trips')
     }
 
     render() {
