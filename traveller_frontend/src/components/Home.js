@@ -5,13 +5,17 @@ const Home = (props) => {
 
     return (
         <div>
-            <h1>Traveller Home</h1>
+            {/* <div className="header">
+                <h1>Traveller</h1>
+                <h4>"Not all who wander are lost" - J.R.R. Tolkien</h4>
+            </div>
+
 
             <div className="nav-container">
-                <NavLink className="navlink" to="/trips/completed" exact>View Past Trips</NavLink>
-                <NavLink className="navlink" to="/trips/upcoming" exact>View Upcoming Trips</NavLink>
-                <NavLink className="navlink" to="/trips/bucketlist" exact>View Bucket List Trips</NavLink>
-            </div>
+                <NavLink className="navlink" activeClassName="active-route" to="/trips/completed" exact>Past Trips</NavLink>
+                <NavLink className="navlink" activeClassName="active-route" to="/trips/upcoming" exact>Upcoming Trips</NavLink>
+                <NavLink className="navlink" activeClassName="active-route" to="/trips/bucketlist" exact>Bucket List Trips</NavLink>
+            </div> */}
         </div>
     )
 }
