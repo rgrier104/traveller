@@ -24,7 +24,7 @@ class TripsContainer extends Component {
                     <Route path="/trips/completed" render={() => <Trips status={"Completed"} trips={this.props.trips.filter(trip => trip.status === "completed")} />} />
                     <Route path="/trips/upcoming" render={() => <Trips status={"Upcoming"} trips={this.props.trips.filter(trip => trip.status === "upcoming")} />} />
                     <Route path="/trips/bucketlist" render={() => <Trips status={"Bucket List"} trips={this.props.trips.filter(trip => trip.status === "bucketlist")} />} />
-                    <Route path="/trips/:id" render={(routerProps) => <Trip {...routerProps} trips={this.props.trips} />} />
+                    <Route path="/trips/:id" render={(routerProps) => <Trip trip={this.props.trips.filter(trip => trip.id === parseInt(routerProps.match.params.id))[0]} />} />
                     <Route path="/trips" render={(routerProps) => <Trips {...routerProps} trips={this.props.trips} />} />
                 </Switch>
                 
