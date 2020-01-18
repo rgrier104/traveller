@@ -6,7 +6,7 @@ const Trips = ({status,trips}) => {
     return (
 
         <div>
-            <h1>{status} Trips</h1>
+            {/* <h1>{status} Trips</h1> */}
             <ul>
                 {trips.map(trip =>
                     <div key={trip.id}>
