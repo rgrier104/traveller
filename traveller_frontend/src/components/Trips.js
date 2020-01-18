@@ -1,19 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Trip from './Trip';
+import TripCard from './TripCard';
 
 const Trips = ({status,trips}) => {
 
     return (
 
-        <div>
-            {/* <h1>{status} Trips</h1> */}
-            <ul>
-                {trips.map(trip =>
-                    <div key={trip.id}>
-                        <Trip trip={trip} />
-                    </div>)}
-            </ul>
+        <div className="trip-title-card">
+            {trips.map(trip =>
+                <div key={trip.id}>
+                    <TripCard trip={trip} />
+                </div>)}
         </div>
     )
 }

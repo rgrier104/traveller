@@ -93,3 +93,15 @@ label {
   /* background-image: url("assorted-map-pieces-2859169.jpg"); */
   height: 100px;
 }
+
+.trip-title-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.trip-title {
+  height: 100px;
+  background: #33ccff;
+  border-radius: 5px;
+}
