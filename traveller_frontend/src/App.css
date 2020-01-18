@@ -1,19 +1,37 @@
+body {
+  /* background-image: url("man-wearing-white-shirt-brown-shorts-and-green-backpack-672358.jpg"); */
+  background-image: url("woman-wearing-black-and-white-blouse-and-white-short-2106776.jpg");
+  /* background-image: url("high-angle-photography-of-mountain-pathway-2082949.jpg"); */
+  /* background-image: url("silhouette-of-person-walking-1046896.jpg"); */
+  height: 100%;
+  width: 100%;
+}
+
 .App {
   text-align: center;
   /* background-image: url("white-airliner-wing-on-top-of-sea-clouds-2007401.jpg"); */
 }
 
+.trip-container {
+  background-color: rgba(12, 34, 38, 0.06);
+  max-width: 600px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding-left: 25%;
-  padding-right: 25%;
+  /* padding-left: 25%;
+  padding-right: 25%; */
 }
 
 .rec-container {
   display: grid;
-  margin-left: 25%;
-  margin-right:25%;
+  /* margin-left: 25%;
+  margin-right:25%; */
 
 }
 
@@ -28,7 +46,7 @@
 .rec-card {
   display: grid;
   grid-template-columns: 9fr 1fr;
-  padding: 5px;
+  /* padding: 5px; */
   border-bottom: 1px solid black;
   border-right: 1px solid black;
 }
@@ -70,19 +88,20 @@ label {
 .nav-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  margin: 0 50px;
+  grid-gap: 0px;
+  /* margin: 3% 20% 0; */
   
 }
 
 .navlink {
   display: grid;
-  padding: 12px;
-  margin: 20px;
-  background: #33ccff;
-  color: white;
+  /* padding: 12px; */
+  /* margin: 20px; */
+  background: white;
+  /* color: white; */
   text-decoration: none;
-  border-radius: 5px;
+  border-right: 1px solid black;
+  /* border-radius: 5px; */
 }
 
 .home {
@@ -96,17 +115,22 @@ label {
 
 .header {
   /* background-image: url("assorted-map-pieces-2859169.jpg"); */
-  height: 100px;
+  /* height: 100px; */
+  background-color: white;
+  /* opacity: 0.5; */
+  /* margin: 3% 5% 0; */
 }
 
 .trip-title-card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1em;
+  /* margin: 3% 20% 0; */
 }
 
 .trip-title {
   height: 100px;
-  background: #33ccff;
+  background: white;
+  /* opacity: 0.5; */
   border-radius: 5px;
 }

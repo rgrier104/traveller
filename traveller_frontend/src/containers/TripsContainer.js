@@ -16,7 +16,7 @@ class TripsContainer extends Component {
 
     render() {
         return (
-            <div>
+            <div className="trip-container">
                 <Navbar />
                 <Switch>
                     <Route exact path="/" component={Home} />
@@ -27,7 +27,7 @@ class TripsContainer extends Component {
                     <Route path="/trips/:id" render={(routerProps) => <Trip trip={this.props.trips.filter(trip => trip.id === parseInt(routerProps.match.params.id))[0]} />} />
                     <Route path="/trips" render={(routerProps) => <Trips {...routerProps} trips={this.props.trips} />} />
                 </Switch>
-                
+
             </div>
         )
     }
