@@ -50,7 +50,7 @@
   color: red;
 }
 
-form {
+.rec-form {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-gap: .5em;
@@ -64,4 +64,21 @@ label {
 
 .submit {
   grid-column: 2/3;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  margin: 50px;
+}
+
+.navlink {
+  display: grid;
+  padding: 12px;
+  margin: 20px;
+  background: #33ccff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }

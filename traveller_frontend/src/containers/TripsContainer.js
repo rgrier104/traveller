@@ -26,7 +26,7 @@ class TripsContainer extends Component {
                     <Route path="/trips/:id" render={(routerProps) => <Trip {...routerProps} trips={this.props.trips} />} />
                     <Route path="/trips" render={(routerProps) => <Trips {...routerProps} trips={this.props.trips} />} />
                 </Switch>
-                <Navbar />
+                {/* <Navbar /> */}
             </div>
         )
     }

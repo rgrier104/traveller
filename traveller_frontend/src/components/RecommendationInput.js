@@ -27,7 +27,7 @@ class RecommendationInput extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
+                <form className="rec-form" onSubmit={this.handleSubmit}>
                     <label>Recommendation:</label>
                     <input onChange={this.handleOnChange} type="text" name="title" value={this.state.title} />
                     <label>Notes:</label>
