@@ -6,7 +6,7 @@ const TripCard = ({ trip }) => {
     return (
         <div>
             <NavLink to={`/trips/${trip.id}`} exact>
-                <h1 className="trip-title">{trip ? trip.name : null}</h1>
+                <h3 className="trip-title">{trip ? trip.name : null}</h3>
             </NavLink>
         </div>
     )
