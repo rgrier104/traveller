@@ -8,7 +8,7 @@ const Trips = ({status,trips}) => {
 
         <div className="trip-title-card">
             {trips.map(trip =>
-                <div key={trip.id}>
+                <div className="trip-title" key={trip.id}>
                     <TripCard trip={trip} />
                 </div>)}
         </div>

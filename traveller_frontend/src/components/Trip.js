@@ -6,8 +6,8 @@ const Trip = ({trip}) => {
     // let trip = props.trips.filter(trip => trip.id === parseInt(props.match.params.id))[0]
 
     return (
-        <div>
-            <h1>{trip ? trip.name : null} Recommendations</h1>
+        <div className="trip-show">
+            <div className="trip-show-name">{trip ? trip.name : null}</div>
             <div>
                 <RecommendationsContainer trip={trip} />
             </div>

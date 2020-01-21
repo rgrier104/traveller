@@ -28,9 +28,9 @@ class TripInput extends Component {
     render() {
         return (
             <div>
-                <h1>Create New Trip</h1>
-                <form onSubmit={this.handleSubmit}>
-                    <label>Trip Name:</label>
+                {/* <h1>Create New Trip</h1> */}
+                <form className="trip-form" onSubmit={this.handleSubmit}>
+                    <label>New Trip Name:</label>
                     <input onChange={this.handleOnChange} type="text" name="name" value={this.state.name} />
                     <label>Status:</label>
                     <select onChange={this.handleOnChange} value={this.state.status} name="status" >
@@ -39,7 +39,8 @@ class TripInput extends Component {
                         <option value="upcoming">Upcoming</option>
                         <option value="bucketlist">Bucket List</option>
                     </select>
-                    <input type="submit" value="Create Trip" />
+                    <br></br>
+                    <input className="submit" type="submit" value="Create Trip" />
                 </form>
             </div>
         )
