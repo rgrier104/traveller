@@ -1,7 +1,4 @@
 body {
-  /* background-image: url("man-wearing-white-shirt-brown-shorts-and-green-backpack-672358.jpg"); */
-  /* background-image: url("woman-wearing-black-and-white-blouse-and-white-short-2106776.jpg"); */
-  /* background-image: url("high-angle-photography-of-mountain-pathway-2082949.jpg"); */
   background-image: url("silhouette-of-person-walking-1046896.jpg");
   height: 100%;
   width: 100%;
@@ -9,12 +6,10 @@ body {
 
 .App {
   text-align: center;
-  /* background-image: url("white-airliner-wing-on-top-of-sea-clouds-2007401.jpg"); */
 }
 
 .trip-container {
   background-color: rgba(11, 86, 100, 0.4);
-  /* background-color: rgba(174, 203, 228, 0.64); */
   color: white;
   max-width: 600px;
   margin-top: 50px;
@@ -26,22 +21,16 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  /* padding-left: 25%;
-  padding-right: 25%; */
   background-color: white;
 }
 
 .rec-container {
   display: grid;
-  /* margin-left: 25%;
-  margin-right:25%; */
 
 }
 
 .rec-list-container {
-    display: grid;
-  /* margin-left: 25%;
-  margin-right:25%; */
+  display: grid;
   border-top: 1px solid black;
   border-left: 1px solid black;
 }
@@ -89,7 +78,6 @@ body {
   grid-gap: .3em;
   padding: 20px;
   margin: 5px 40px 5px;
-  /* width: 200px; */
   opacity: .7;
 }
 
@@ -112,16 +100,11 @@ label {
 
 .navlink {
   display: grid;
-  /* padding: 12px;
-  margin: 20px; */
-  /* background: white; */
   color: black;
   text-decoration: none;
-  /* border-right: 1px solid black; */
   text-align: center;
   vertical-align: middle;
   padding: 5px;
-  /* border-radius: 5px; */
 }
 
 .home {
@@ -131,14 +114,6 @@ label {
 
 .active-route {
   background: rgba(12, 34, 38, 0.31);
-}
-
-.header {
-  /* background-image: url("assorted-map-pieces-2859169.jpg"); */
-  /* height: 100px; */
-  /* background-color: rgba(12, 34, 38, 0.31); */
-  /* opacity: 0.5; */
-  /* margin: 3% 5% 0; */
 }
 
 h1 {
@@ -164,16 +139,11 @@ h4 {
 }
 
 .trip-title {
-  /* height: 100px; */
-  /* border: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: center;
   background: white;
-  
   opacity: 0.6;
-  /* border-radius: 5px; */
-  
 }
 
 .trip-show {

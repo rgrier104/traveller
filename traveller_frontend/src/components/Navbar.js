@@ -5,7 +5,7 @@ class Navbar extends Component {
     render() {
         return (
             <div>
-                <div className="header">
+                <div>
                     <NavLink to="/" className="home" exact><h1>TRAVELLER</h1></NavLink>
                     <h4>"Not all who wander are lost" - J.R.R. Tolkien</h4>
                 </div>
