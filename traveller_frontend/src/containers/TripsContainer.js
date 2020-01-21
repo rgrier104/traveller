@@ -5,7 +5,6 @@ import TripInput from '../components/TripInput';
 import Trips from '../components/Trips';
 import Trip from '../components/Trip';
 import { fetchTrips } from '../actions/fetchTrips';
-import Home from '../components/Home';
 import Navbar from '../components/Navbar';
 
 class TripsContainer extends Component {
@@ -19,7 +18,6 @@ class TripsContainer extends Component {
             <div className="trip-container">
                 <Navbar />
                 <Switch>
-                    <Route exact path="/" component={Home} />
                     <Route path="/trips/new" component={TripInput} />
                     <Route path="/trips/completed" render={() => <Trips status={"Completed"} trips={this.props.trips.filter(trip => trip.status === "completed")} />} />
                     <Route path="/trips/upcoming" render={() => <Trips status={"Upcoming"} trips={this.props.trips.filter(trip => trip.status === "upcoming")} />} />
