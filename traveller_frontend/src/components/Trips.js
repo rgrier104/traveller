@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import TripCard from './TripCard';
 
-const Trips = ({status,trips}) => {
+const Trips = ({trips}) => {
 
     return (
 
