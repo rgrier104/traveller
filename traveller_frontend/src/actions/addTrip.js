@@ -1,6 +1,6 @@
 export function addTrip(data) {
     return (dispatch) => {
-        fetch('http://127.0.0.1:3000/api/v1/trips', {
+        fetch('https://traveller-recs-api.herokuapp.com/api/v1/trips', {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
